@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,23 +11,42 @@
         <h1>Zero Hunger Platform</h1>
         <nav>
             <ul>
-                <li><a href="#consumer-info">Healthy Food Choices</a></li>
-                <li><a href="#farmer-market">Farmer Market Connection</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#healthy-food">Healthy Food Choices</a></li>
+                <li><a href="#farmers-market">Farmer Market Connection</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="consumer-info">
-            <h2>Healthy Food Choices & Local Food Sources</h2>
-            <p>Find information on healthy eating habits, local food sources, and more.</p>
-            <!-- Additional content like search filters, recipes, and directories will go here -->
+        <section id="home">
+            <h2>Welcome to the Zero Hunger Platform</h2>
+            <p>Empowering communities with information on healthy eating and connecting farmers directly with consumers.</p>
         </section>
 
-        <section id="farmer-market">
-            <h2>Small-Scale Farmer Market Connection</h2>
-            <p>Connect with local farmers and access fresh produce directly.</p>
-            <!-- Additional content like farmer profiles, product listings, etc., will go here -->
+        <section id="healthy-food">
+            <h2>Healthy Food Choices</h2>
+            <div id="recipes"></div>
+            <div>
+                <input type="text" id="search-bar" placeholder="Search local food sources...">
+                <button onclick="searchLocalFood()">Search</button>
+            </div>
+        </section>
+
+        <section id="farmers-market">
+            <h2>Farmer Market Connection</h2>
+            <div id="farmers"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 
