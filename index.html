@@ -10,52 +10,25 @@
 <body>
     <header>
         <h1>Zero Hunger Platform</h1>
-        <nav role="navigation" aria-label="Main Navigation">
+        <nav>
             <ul>
                 <li><a href="#consumer-info">Healthy Food Choices</a></li>
                 <li><a href="#farmer-market">Farmer Market Connection</a></li>
-                <li><a href="#resources">Resources</a></li>
             </ul>
         </nav>
     </header>
 
-    <main role="main">
-        <section id="consumer-info" aria-labelledby="consumer-info-heading">
-            <h2 id="consumer-info-heading">Healthy Food Choices & Local Food Sources</h2>
-            <p>Discover healthy eating habits and find local food sources to enhance your diet and well-being.</p>
-            
-            <h3>Benefits of Healthy Eating</h3>
-            <ul>
-                <li>Improves overall health and reduces risk of chronic diseases</li>
-                <li>Enhances mental health and mood</li>
-                <li>Boosts energy levels and supports growth</li>
-            </ul>
-            
-            <h3>Find Local Food Sources</h3>
-            <label for="search-location">Search by Location:</label>
-            <input type="text" id="search-location" placeholder="Enter your location" aria-required="true" />
-            <button onclick="searchLocalMarkets()">Search</button>
-            <div id="market-results" aria-live="polite"></div>
+    <main>
+        <section id="consumer-info">
+            <h2>Healthy Food Choices & Local Food Sources</h2>
+            <p>Find information on healthy eating habits, local food sources, and more.</p>
+            <!-- Additional content like search filters, recipes, and directories will go here -->
         </section>
 
-        <section id="farmer-market" aria-labelledby="farmer-market-heading">
-            <h2 id="farmer-market-heading">Small-Scale Farmer Market Connection</h2>
-            <p>Empower local farmers by connecting them directly with consumers.</p>
-            
-            <h3>Farmer Profiles</h3>
-            <div id="farmer-list">
-                <!-- Dynamic content for farmer profiles will be inserted here -->
-            </div>
-        </section>
-
-        <section id="resources" aria-labelledby="resources-heading">
-            <h2 id="resources-heading">Additional Resources</h2>
-            <p>Explore these resources to learn more about sustainable agriculture and healthy eating.</p>
-            <ul>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">World Health Organization - Healthy Diet</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Food and Agriculture Organization - Sustainable Development Goals</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Local Community Supported Agriculture (CSA) Programs</a></li>
-            </ul>
+        <section id="farmer-market">
+            <h2>Small-Scale Farmer Market Connection</h2>
+            <p>Connect with local farmers and access fresh produce directly.</p>
+            <!-- Additional content like farmer profiles, product listings, etc., will go here -->
         </section>
     </main>
 
