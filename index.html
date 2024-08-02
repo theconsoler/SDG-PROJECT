@@ -1,10 +1,10 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero Hunger Platform</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,42 +12,49 @@
         <h1>Zero Hunger Platform</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#healthy-food">Healthy Food Choices</a></li>
-                <li><a href="#farmers-market">Farmer Market Connection</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#consumer-info">Healthy Food Choices</a></li>
+                <li><a href="#farmer-market">Farmer Market Connection</a></li>
+                <li><a href="#resources">Resources</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Welcome to the Zero Hunger Platform</h2>
-            <p>Empowering communities with information on healthy eating and connecting farmers directly with consumers.</p>
+        <section id="consumer-info">
+            <h2>Healthy Food Choices & Local Food Sources</h2>
+            <p>Discover healthy eating habits and find local food sources to enhance your diet and well-being.</p>
+            
+            <h3>Benefits of Healthy Eating</h3>
+            <ul>
+                <li>Improves overall health and reduces risk of chronic diseases</li>
+                <li>Enhances mental health and mood</li>
+                <li>Boosts energy levels and supports growth</li>
+            </ul>
+            
+            <h3>Find Local Food Sources</h3>
+            <input type="text" id="search-location" placeholder="Enter your location" />
+            <button onclick="searchLocalMarkets()">Search</button>
+            <div id="market-results"></div>
         </section>
 
-        <section id="healthy-food">
-            <h2>Healthy Food Choices</h2>
-            <div id="recipes"></div>
-            <div>
-                <input type="text" id="search-bar" placeholder="Search local food sources...">
-                <button onclick="searchLocalFood()">Search</button>
+        <section id="farmer-market">
+            <h2>Small-Scale Farmer Market Connection</h2>
+            <p>Empower local farmers by connecting them directly with consumers.</p>
+            
+            <h3>Farmer Profiles</h3>
+            <div id="farmer-list">
+                <!-- Dynamic content for farmer profiles will be inserted here -->
             </div>
         </section>
 
-        <section id="farmers-market">
-            <h2>Farmer Market Connection</h2>
-            <div id="farmers"></div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+        <section id="resources">
+            <h2>Additional Resources</h2>
+            <p>Explore these resources to learn more about sustainable agriculture and healthy eating.</p>
+            <ul>
+                <li><a href="#">World Health Organization - Healthy Diet</a></li>
+                <li><a href="#">Food and Agriculture Organization - Sustainable Development Goals</a></li>
+                <li><a href="#">Local Community Supported Agriculture (CSA) Programs</a></li>
+            </ul>
         </section>
     </main>
 
